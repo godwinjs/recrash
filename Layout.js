@@ -1,5 +1,3 @@
-import Home from '/Home'
+import { react, babel, reactDOM } from "./module.js";
 
-export default function() {
-    return(<Home />)
-}
+
