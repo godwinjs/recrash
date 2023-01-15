@@ -21,3 +21,6 @@ jsz and flux
 - redux and react router needs to be added to make it function like anguler..
 - jsx docs not freindly
 */
+var a = 2;
+
+export default a;
