@@ -1,11 +1,15 @@
-const react = React, reactDOM = ReactDOM, babel = Babel;
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
-const root = reactDOM.createRoot(document.getElementById('root'))
-
-root.render(<h1>React For those who dare, NODE for those who overcome</h1>)
-
-export {
-    react,
-    reactDOM,
-    babel
+class Fruits extends React.Component {
+    render(){
+        return <>
+            <h1>React, For those who dare.<br  /> Node for those who overcome</h1>
+            <ul>
+                <li>Mango</li>
+                <li>Orange</li>
+                <li>Banana</li>
+            </ul>
+        </>
+    }
 }
+root.render(<Fruits />)
