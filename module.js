@@ -12,4 +12,17 @@ class Fruits extends React.Component {
         </>
     }
 }
-root.render(<Fruits />)
+
+class Share extends React.Component {
+    render(){
+        return(<a {...this.props} >visit Website</a>)
+    }
+}
+
+
+root.render(
+        <>
+        <Fruits /> 
+        <Share href="https://www.google" target="_blank" title="Visit Us" />
+        </>
+        )
